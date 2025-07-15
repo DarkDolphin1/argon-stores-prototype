@@ -13,9 +13,9 @@ body{
     justify-content: space-between;
 }
 
-.header-tools{
-    min-width: 500px;
-    width: 10%;
+.header-tools {
+    width: 25%;
+    min-width: 320px;
 }
 
 ul {
@@ -24,6 +24,7 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 ul li{
     margin: 18px 18px;
@@ -37,12 +38,13 @@ li button{
     user-select: none;
 }
 
-.btn-img{
-    border: none;
-    width: 2.3vw;
+.btn-img {
+    width: clamp(28px, 2.3vw, 48px);
     height: auto;
+    border: none;
     background: transparent;
     -webkit-user-drag: none;
+    user-select: none;
 
     transition: all 0.2s ease-in-out;
 }
