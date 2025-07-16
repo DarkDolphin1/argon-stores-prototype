@@ -1,0 +1,112 @@
+.content{
+    /* height: 1000px; */
+    width: auto;
+    opacity: 0.8;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-left: 24px;
+}
+
+.product-image-container{
+    padding: 36px 12px;
+    padding-top: 12px;
+    width: clamp( 200px , 90% , 800px);
+    background-color: gray;
+    border-radius: 24px;
+}
+
+.product-info{
+    background-color: gray;
+    background: transparent;
+    padding-top: 14px;
+}
+
+.model-name{
+    font-family: "Rubik" ,sans-serif, Tahoma, Geneva, Verdana;
+    font-size: 1.5rem; 
+    font-weight: 400;
+    padding-bottom: 14px;
+    padding-left: 8px;
+}
+
+.desc{
+    font-family: "Rubik" ,sans-serif, Tahoma, Geneva, Verdana;
+    padding-left: 15px;
+}
+
+.price{
+    font-family: "Rubik" ,sans-serif, Tahoma, Geneva, Verdana;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 22px 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.add-to-cart-btn{
+    width: 25%;
+    margin-top: 8px;
+    padding: 10px 18px;
+
+    background-color: rgb(213, 209, 209);
+    color: rgb(30, 29, 29);
+    font-size: 0.79rem;
+    font-weight: 550;
+    font-family: "Rubik" , sans-serif;
+    border-style: none;
+    border-radius: 0 12px;
+    cursor: pointer;
+    text-wrap: nowrap;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;         
+    transition: all 0.2s ease-in;        
+}
+
+.add-to-cart-btn:hover{
+    background-color: rgb(163, 163, 163);
+    color: rgb(0, 0, 0);
+}
+.add-to-cart-btn:active{
+    background-color: rgb(153, 150, 150);
+    transform: scale3d(0.97 , 0.97 , 0.97);
+}
+
+.price-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buy-now-btn{
+    width: 25%;
+    padding: 10px 14px;
+
+    background-color: rgb(55, 54, 54);
+    color: whitesmoke;
+    font-size: 0.79rem;
+    font-family: "Rubik" , sans-serif;
+    border-style: none;
+    border-radius:  12px 0px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.2s ease-in;
+}
+
+.buy-now-btn:hover{
+    background-color: rgb(17, 17, 17);
+}
+.buy-now-btn:active{
+    background-color: black;
+    transform: scale3d(0.97 , 0.97 , 0.97);
+}
+
+.product-image{
+    width: 100%;
+    border-radius: 24px;
+}
