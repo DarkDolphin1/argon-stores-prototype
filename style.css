@@ -1,16 +1,24 @@
-*{
+:root {
+    --main-color: hsl(270, 9%, 61%);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: hsl(270, 9%, 61%);
+body {
+    background-color: var(--main-color);
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--main-color);
 }
 
 .header-tools {
@@ -25,20 +33,20 @@ ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: hsl(270, 9%, 61%);
+    background-color: var(--main-color);
 }
 
-ul li{
+ul li {
     margin: 18px 18px;
     text-decoration: none;
     user-select: none;
 }
 
-li button{
+li button {
     border: none;
     cursor: pointer;
     user-select: none;
-    background-color: hsl(270, 9%, 61%);
+    background-color: var(--main-color);
 }
 
 .btn-img {
@@ -48,7 +56,6 @@ li button{
     background: transparent;
     -webkit-user-drag: none;
     user-select: none;
-
     transition: all 0.3s ease-in-out;
 }
 
@@ -56,11 +63,12 @@ li button{
     filter: drop-shadow(0 8px 18px #181515);
 }
 
-.btn-img:active , .text:active{
-    transform: scale3d(0.87,0.87,0.87);
+.btn-img:active,
+.text:active {
+    transform: scale3d(0.87, 0.87, 0.87);
 }
 
-.text{
+.text {
     padding: 10px 0px;
     font-family: sans-serif;
     font-size: 0.85rem;
@@ -68,18 +76,18 @@ li button{
     transition: all 0.2s ease-in-out;
 }
 
-.logo-container{
+.logo-container {
     max-width: 300px;
     user-select: none;
 }
 
-.logo-container img{
+.logo-container img {
     width: 100%;
     -webkit-user-drag: none;
     cursor: pointer;
     transition: opacity 0.15s;
 }
 
-.logo-container img:active{
+.logo-container img:active {
     opacity: 0.75;
 }
